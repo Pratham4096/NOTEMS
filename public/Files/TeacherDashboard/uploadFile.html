@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documents</title>
+    <link rel="stylesheet" type="text/css" href="uploadStyle.css">
+</head>
+
+<body>
+
+    <form action="./upload1" method="post" enctype="multipart/form-data">
+
+        <div class="container">
+            <h1><img src="pngwing.com.png" alt="Icon" class="icon">My Drive</h1>
+
+               <div class="upload-btn-wrapper">
+                <label class="btn" for="myfile">Choose File</label>
+                <input type="file" name="file" id="myfile" accept="" onchange="uploadFile()">
+               </div>
+            
+               <input class="a" type="submit" value="upload">
+               <br>
+               <br>
+               
+            
+            <ul class="file-list" id="fileList">
+            </ul>
+        </div>
+
+        
+    </form> 
+
+    <script src="uploadScript.js">
+        
+    </script>
+</body>
+
+</html>
